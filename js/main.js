@@ -1,10 +1,23 @@
-const text = "Azure | SOC Analyst | Cloud Security | Linux | Docker";
-let idx = 0;
-function typingEffect(){
-  if(idx < text.length){
-    document.getElementById("typing").innerHTML += text.charAt(idx);
-    idx++;
-    setTimeout(typingEffect, 70);
-  }
+// Smooth scroll to sections
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
+
+// Resume button click animation
+const resumeButton = document.querySelector('.cta-button');
+if (resumeButton) {
+    resumeButton.addEventListener('click', () => {
+        resumeButton.style.transform = 'scale(0.95)';
+        setTimeout(() => {
+            resumeButton.style.transform = 'scale(1)';
+        }, 150);
+    });
 }
-typingEffect();
+
+console.log("Portfolio main.js loaded successfully!");
