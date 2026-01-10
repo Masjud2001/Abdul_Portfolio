@@ -1,116 +1,141 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Munshi Abdul Masjud Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="main.js" defer></script>
+  <title>Munshi Abdul Masjud | Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <div class="logo">
-      <img src="logo.png" alt="Munshi Abdul Masjud Logo">
-      <h1>Munshi Abdul Masjud</h1>
-    </div>
-    <a class="cta-button" href="https://raw.githubusercontent.com/Masjud2001/Abdul_Portfolio/main/resume/resume.pdf" target="_blank">Resume</a>
-  </header>
 
-  <!-- About / Objective -->
-  <section id="about">
-    <h2>Objective</h2>
-    <p>Cybersecurity and Networking student with hands-on experience in Azure cloud security, Linux systems, Docker containerization, and network security. Seeking an entry-level cybersecurity or SOC analyst role to apply technical skills in protecting systems, networks, and data.</p>
-  </section>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">Munshi Abdul Masjud</div>
+  <ul>
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">Objective</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+  </ul>
+</nav>
 
-  <!-- Education -->
-  <section id="education">
-    <h2>Education</h2>
-    <p><strong>Monroe University, New Rochelle, NY</strong><br>
-    Bachelor's degree in Cybersecurity and Networking, expected April 2026</p>
-    <p><strong>Minor / Courses:</strong> CCNA I, II, III | CCNA CyberOps | Network Security | Operating Systems | System Analysis & Design | Database Management Systems | Programming Logic | Statistics for Business Decisions | Finite Math & Linear Modeling | IT Project Management | Business Ethics | Marketing Foundations | Microeconomics</p>
-  </section>
+<!-- HERO -->
+<section id="hero" class="hero">
+  <div class="hero-content" data-aos="fade-up">
+    <h1>Hi, I'm Munshi Abdul Masjud</h1>
+    <p id="typing"></p>
+    <a href="https://raw.githubusercontent.com/Masjud2001/Abdul_Portfolio/main/resume/resume.pdf" class="btn" download>Download Resume</a>
+  </div>
+</section>
 
-  <!-- Experience -->
-  <section id="experience">
-    <h2>Experience</h2>
-    <h3>IT Support Technician</h3>
-    <p>Mas Media Cyber Net, Mirpur, Dhaka, Bangladesh (May 2019 – Jan 2021)</p>
+<!-- ABOUT / OBJECTIVE -->
+<section id="about" class="section" data-aos="fade-up">
+  <h2>Objective</h2>
+  <p>
+    Cybersecurity and Networking student with hands-on experience in Azure cloud security, Linux systems, Docker containerization, and network security. Seeking an entry-level cybersecurity or SOC analyst role to apply technical skills in protecting systems, networks, and data.
+  </p>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section" data-aos="fade-up">
+  <h2>Education</h2>
+  <p><strong>Monroe University</strong>, New Rochelle, NY</p>
+  <p>Bachelor’s in Cybersecurity & Networking (Expected April 2026)</p>
+  <h3>Relevant Coursework:</h3>
+  <p>CCNA I, II, III | CCNA CyberOps | Network Security | Operating Systems | Systems Analysis & Design | Database Management Systems | Programming Logic | Statistics | IT Project Management | Business Ethics</p>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section" data-aos="fade-up">
+  <h2>Experience</h2>
+
+  <div class="card">
+    <h3>IT Support Technician – Mas Media Cyber Net</h3>
+    <p><em>Mirpur, Dhaka | May 2019 – Jan 2021</em></p>
     <ul>
-      <li>Diagnosed and resolved hardware/software issues.</li>
-      <li>Installed and maintained desktops, OS, and software.</li>
-      <li>Provided on-site and remote support.</li>
-      <li>Assisted with basic networking and system security guidance.</li>
+      <li>Diagnosed & resolved hardware/software issues</li>
+      <li>Installed & maintained operating systems</li>
+      <li>Provided on-site & remote support</li>
+      <li>Assisted with basic network troubleshooting</li>
     </ul>
+  </div>
 
-    <h3>Cybersecurity Bootcamp (In Progress)</h3>
+  <div class="card">
+    <h3>Cybersecurity Bootcamp (Hands-on Training)</h3>
+    <p><em>June 2025 – Feb 2026 (In Progress)</em></p>
     <ul>
-      <li>Network security monitoring, Linux administration, Azure cloud security, Docker container security.</li>
-      <li>Incident detection, log analysis, and lab-based vulnerability exercises.</li>
+      <li>Network monitoring & traffic analysis</li>
+      <li>Linux system hardening</li>
+      <li>Azure cloud security labs</li>
+      <li>Docker & container security</li>
+      <li>Incident detection, log analysis & threat investigation</li>
     </ul>
-  </section>
+  </div>
+</section>
 
-  <!-- Computer Skills -->
-  <section id="skills">
-    <h2>Computer Skills</h2>
-    <p><strong>Cloud & Security:</strong> Microsoft Azure (VMs, NSG, Load Balancer), Cloud Security Fundamentals, Risk Assessment & NIST Framework</p>
-    <p><strong>Networking:</strong> TCP/IP, Routing & Switching, Network Troubleshooting (CCNA)</p>
-    <p><strong>Systems & Tools:</strong> Linux System Administration, Docker & Containerization, Windows OS</p>
-    <p><strong>Other:</strong> Hardware & Software Troubleshooting, Microsoft Office (Word, Excel, PowerPoint)</p>
-  </section>
+<!-- PROJECTS -->
+<section id="projects" class="section" data-aos="fade-up">
+  <h2>Projects</h2>
 
-  <!-- Certifications -->
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <ul>
-      <li>CCNA 1, 2, 3 – Cisco</li>
-      <li>Data Security – Cisco</li>
-      <li>Foundations of Cybersecurity – Google</li>
-      <li>Introduction to AI in Cybersecurity – Johns Hopkins University</li>
-      <li>Ethical Hacking – uCertify</li>
-      <li>Digital Forensic Investigation – uCertify</li>
-      <li>Wireless Technology – uCertify</li>
-    </ul>
-  </section>
+  <div class="project-card">
+    <h3>Azure Cloud Security & Containerized Web Infrastructure</h3>
+    <p>Jump Box & internal Linux servers, Azure NSGs, Dockerized web app</p>
+    <a href="https://github.com/Masjud2001/Azure_Cloud_Project" target="_blank" class="btn">View on GitHub</a>
+  </div>
 
-  <!-- Projects -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <h3>Azure Cloud Security & Containerized Web Infrastructure Project</h3>
-    <p>Microsoft Azure | Linux | Docker | Cloud Networking & Security</p>
-    <ul>
-      <li>Designed a secure Azure cloud environment with 3 Linux VMs: Jump Box, Web-1, Web-2.</li>
-      <li>Configured Jump Box as a bastion host, Azure NSGs, and Load Balancer for high availability.</li>
-      <li>Deployed containerized web application using Docker for consistent and scalable service deployment.</li>
-    </ul>
+  <div class="project-card">
+    <h3>Security Analyst – Data Center Migration</h3>
+    <p>Risk management (NIST & ISO 27001), firewall, VPN & IAM analysis</p>
+    <a href="https://github.com/Masjud2001/DataCenter_Migration_Project" target="_blank" class="btn">View on GitHub</a>
+  </div>
 
-    <h3>Security Analyst – Data Center Migration Project</h3>
-    <ul>
-      <li>Analyzed and mitigated security risks during enterprise data migration.</li>
-      <li>Developed Security Risk Management Plan aligned with NIST & ISO 27001.</li>
-      <li>Implemented encryption, IAM best practices, and firewall validation.</li>
-    </ul>
-  </section>
+  <div class="project-card">
+    <h3>Azure & GoDaddy Secure Web Application</h3>
+    <p>Custom domain, TLS/SSL, Docker App Service, WAF</p>
+    <a href="https://github.com/Masjud2001/Azure_GoDaddy_WebApp" target="_blank" class="btn">View on GitHub</a>
+  </div>
 
-  <!-- Technologies & Tools -->
-  <section id="tools">
-    <h2>Technologies & Tools</h2>
-    <p>Azure Portal, Azure App Service, Docker, Bash, GoDaddy DNS, HTML/CSS, TLS/SSL, Cloud Security Concepts</p>
-  </section>
+</section>
 
-  <!-- Volunteer & Activities -->
-  <section id="volunteer">
-    <h2>Volunteer & Activities</h2>
-    <p>Bangladesh National Cadet Corps (BNCC) | Matrix Humanity – Bangladesh | Arts & Photography Club, Dhaka Commerce College</p>
-  </section>
+<!-- SKILLS -->
+<section id="skills" class="section" data-aos="fade-up">
+  <h2>Skills</h2>
+  <ul class="skills">
+    <li>Azure Cloud Security</li>
+    <li>Linux Administration</li>
+    <li>Docker & Containerization</li>
+    <li>TCP/IP, Routing & Switching</li>
+    <li>Risk Assessment & NIST Framework</li>
+    <li>Windows OS</li>
+  </ul>
+</section>
 
-  <!-- Footer -->
-  <footer>
-    <p>Connect with me:</p>
-    <a href="https://www.linkedin.com/in/munshi-abdul-masjud" target="_blank">LinkedIn</a> |
-    <a href="https://www.facebook.com/munshi.abdul.masjud" target="_blank">Facebook</a> |
-    <a href="https://github.com/Masjud2001" target="_blank">GitHub</a>
-    <p>© 2026 Munshi Abdul Masjud</p>
-  </footer>
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="section" data-aos="fade-up">
+  <h2>Certifications</h2>
+  <ul>
+    <li>CCNA 1, 2, 3 – Cisco</li>
+    <li>Data Security – Cisco</li>
+    <li>Foundations of Cybersecurity – Google</li>
+    <li>Ethical Hacking – uCertify</li>
+    <li>Digital Forensic Investigation – uCertify</li>
+  </ul>
+</section>
+
+<footer>
+  <p>© 2026 Munshi Abdul Masjud | Cybersecurity Portfolio</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/main.js"></script>
+<script>
+  AOS.init({ duration: 1200 });
+</script>
+
 </body>
 </html>
